@@ -8,7 +8,7 @@ def fun1():
     while True:
         i = int(input('Игрок №1 - введи через пробел номер строки: '))
         j = int(input('Игрок №1 - введи через пробел номер столбца: '))
-        if i < 3 and j < 3 and a[i][j] == '-':
+        if 0 <= i < 3 and 0 <= j < 3 and a[i][j] == '-':
             a[i][j] = 'X'
             break
         else:
@@ -20,7 +20,7 @@ def fun2():
     while True:
         i = int(input('Игрок №2 - введи через пробел номер строки: '))
         j = int(input('Игрок №2 - введи через пробел номер столбца: '))
-        if i < 3 and j < 3 and a[i][j] == '-':
+        if 0 <= i < 3 and 0 <= j < 3 and a[i][j] == '-':
             a[i][j] = '0'
             break
         else:
